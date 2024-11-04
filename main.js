@@ -23,7 +23,9 @@ async function fetchTicket(){
     catch (errorOccur){
     error.textcontent = `Error`
     }
-
+//Task 4
+finally {
+    if (ticketContainer.innerHTML  === `Tickets loading...`)}
 }
 
 //Task 3
