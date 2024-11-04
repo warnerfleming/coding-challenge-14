@@ -23,6 +23,19 @@ async function fetchTicket(){
     catch (errorOccur){
     error.textcontent = `Error`
     }
-    
+
 }
 
+//Task 3
+function displayTickets(tickets){
+    tickets.forEach(item =>{
+        const tDiv = document.createElement(`div`)
+        tDiv.classList.add(`ticket`)
+        tDiv.innerHTML = `
+        <p><strong>Customer Name</strong> ${ticket.userId}</p>
+        <p><strong>Issue Description</strong> ${ticket.title}</p>
+        <p><strong>Details</strong> ${ticket.body} </p> `
+    })
+}
+
+fetchTicket()
